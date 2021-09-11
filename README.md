@@ -18,8 +18,7 @@ The calculator can perform basic arithmetic operations like addition, subtractio
 - Bootstrap
 - HTML
 
-
-
+![](assets/demo/calculator.gif)
 ## Contact:
 
 - Github: [zahra315](https://github.com/zahra315)
