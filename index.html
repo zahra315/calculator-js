@@ -10,7 +10,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <title>Calculator</title>
+    <title>Calculator :: By Zahra Seyedi</title>
     <link rel="stylesheet" type="text/css" href="./assets/style/style.css" />
   </head>
   <body>
@@ -19,33 +19,121 @@
         <div class="container justify-content-center d-flex m-5 pb-5">
           <div class="row">
             <div class="col-8">
-              <div class="row justify-content-md form-control">screen</div>
+              <div
+                class="justify-content-md border rounded row w-auto p-2 display"
+              >
+                <p></p>
+              </div>
               <div class="row row-cols-3">
-                <span class="btn btn-outline-info text-dark">7</span>
-                <span class="btn btn-outline-info text-dark">8</span>
-                <span class="btn btn-outline-info text-dark">9</span>
-                <span class="btn btn-outline-info text-dark">4</span>
-                <span class="btn btn-outline-info text-dark">5</span>
-                <span class="btn btn-outline-info text-dark">6</span>
-                <span class="btn btn-outline-info text-dark">1</span>
-                <span class="btn btn-outline-info text-dark">2</span>
-                <span class="btn btn-outline-info text-dark">3</span>
-                <span class="btn btn-outline-info text-dark">CE</span>
-                <span class="btn btn-outline-info text-dark">0</span>
-                <span class="btn btn-outline-info text-dark">.</span>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('7')"
+                >
+                  7
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('8')"
+                >
+                  8
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('9')"
+                >
+                  9
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('4')"
+                >
+                  4
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('5')"
+                >
+                  5
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('6')"
+                >
+                  6
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('1')"
+                >
+                  1
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('2')"
+                >
+                  2
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('3')"
+                >
+                  3
+                </button>
+                <button
+                  id="clear"
+                  class="btn btn-outline-info text-dark"
+                  onclick="allClear()"
+                >
+                  C
+                </button>
+                <button
+                  id="zero"
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="displayValue('0')"
+                >
+                  0
+                </button>
+                <button
+                  class="btn btn-outline-info text-dark digit"
+                  onclick="addDecimal('.')"
+                >
+                  .
+                </button>
               </div>
             </div>
 
             <div class="col d-flex">
               <div class="col btn-group-vertical">
-                <span
-                  class="row btn btn-outline-secondary justify-content-start"
-                  >=</span
+                <button
+                  class="row btn btn-outline-success justify-content-start"
+                  onclick="calculate()"
                 >
-                <span class="row border-secondary btn btn-info">&#247;</span>
-                <span class="row border-secondary btn btn-info">*</span>
-                <span class="row border-secondary btn btn-info">-</span>
-                <span class="row border-secondary btn btn-info">+</span>
+                  =
+                </button>
+                <button
+                  class="row border-secondary btn btn-secondary operator"
+                  onclick="addOperation('/')"
+                >
+                  &divide
+                </button>
+                <button
+                  class="row border-secondary btn btn-secondary operator"
+                  onclick="addOperation('*')"
+                >
+                  x
+                </button>
+                <button
+                  class="row border-secondary btn btn-secondary operator"
+                  onclick="addOperation('-')"
+                >
+                  -
+                </button>
+                <button
+                  class="row border-secondary btn btn-secondary operator"
+                  onclick="addOperation('+')"
+                >
+                  +
+                </button>
               </div>
             </div>
           </div>
@@ -53,4 +141,5 @@
       </section>
     </div>
   </body>
+  <script src="./assets/js/script.js"></script>
 </html>
