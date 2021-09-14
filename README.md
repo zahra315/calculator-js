@@ -1,6 +1,8 @@
 # calculator-js
 calculator from scratch. I'll focus on the JavaScript, HTML, Bootstra
 
+https://zahra315.github.io/calculator-js/
+
 ## License:
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://shields.io)
